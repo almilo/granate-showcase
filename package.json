@@ -1,0 +1,30 @@
+{
+  "name": "granate-showcase",
+  "version": "0.0.0",
+  "description": "Showcase project for Granate",
+  "scripts": {
+    "start": "node -r reify src/index.js",
+    "dev": "nodemon --exec node -r reify src/index.js"
+  },
+  "author": "Alberto Mijares <almilo@almilo.es>",
+  "license": "MIT",
+  "keywords": [
+    "granate",
+    "showcase",
+    "example",
+    "GraphQL",
+    "annotations",
+    "directives"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/almilo/granate-showcase"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.2",
+    "reify": "^0.3.8"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}

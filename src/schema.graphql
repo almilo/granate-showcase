@@ -1,0 +1,21 @@
+# Domain entity which represents a Todo object
+type Todo {
+    id: ID!
+    title: String!
+    completed: Boolean!
+}
+
+# Query model for Todos
+type Query {
+    todos(completed: Boolean): [Todo]
+}
+
+# Mutations for Todos
+type Mutation {
+    # Adds an uncompleted Todo with the given description
+    addTodo(title: String!): Todo!
+    # Removes a Todo by id
+    removeTodo(id: ID!): Todo!
+    # Toggles the completed state of a Todo by id
+    toggleTodo(id: ID!): Todo!
+}
