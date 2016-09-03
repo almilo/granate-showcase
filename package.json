@@ -24,6 +24,10 @@
     "nodemon": "^1.10.2",
     "reify": "^0.3.8"
   },
+  "dependencies": {
+    "granate": "^1.0.0",
+    "graphql": "^0.7.0"
+  },
   "engines": {
     "node": ">=6"
   }
