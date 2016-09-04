@@ -1,5 +1,5 @@
 import path from 'path';
-import granate from 'granate';
+import { granate } from 'granate';
 import { readFile, assertResponse } from '../lib';
 
 const schema = readFile(path.join(__dirname, './todos.graphql'));
