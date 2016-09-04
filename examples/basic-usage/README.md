@@ -31,3 +31,11 @@ const response = {
 
 granate(schema, query).then(assertResponse(response));
 ```
+
+### CLI (see [granate-cli](https://github.com/almilo/granate-cli))
+
+```
+> granate serve todos.graphql
+
+Granate server listening on port: '4000'.
+```
