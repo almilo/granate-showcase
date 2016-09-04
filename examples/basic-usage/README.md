@@ -1,12 +1,12 @@
 # Basic usage
 This example shows how to generate a 'client-side' executable schema which uses mock data
-as provided by [graphql-tools/addMockFunctionsToSchema()](https://github.com/apollostack/graphql-tools/blob/master/src/index.js)
+as provided by [graphql-tools/addMockFunctionsToSchema()](https://github.com/apollostack/graphql-tools/blob/master/src/index.js).
 
-### API
+### API (see [running code](index.js))
 
 ```js
 import path from 'path';
-import granate from 'granate';
+import { granate } from 'granate';
 import { readFile, assertResponse } from '../lib';
 
 const schema = readFile(path.join(__dirname, './todos.graphql'));
@@ -32,7 +32,7 @@ const response = {
 granate(schema, query).then(assertResponse(response));
 ```
 
-### CLI (see [granate-cli](https://github.com/almilo/granate-cli))
+### CLI (see [granate-cli](https://github.com/almilo/granate-cli) examples)
 
 ```
 > granate serve todos.graphql
