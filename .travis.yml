@@ -7,3 +7,6 @@ notifications:
   email: false
 node_js:
   - '6'
+before_script:
+  # force install of last granate version
+  - npm i granate
