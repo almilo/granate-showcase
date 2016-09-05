@@ -11,6 +11,8 @@ export function assertResponse(expectedResponse) {
             assert.deepEqual(queryResult, expectedResponse);
         } catch (e) {
             console.error('Assertion failed:', e.message);
+            console.error('Expected:', JSON.stringify(e.expected, undefined, 2));
+            console.error('Actual:', JSON.stringify(e.actual, undefined, 2));
             process.exit(1);
         }
     };
