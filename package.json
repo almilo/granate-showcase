@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "granate": "^1.0.0",
-    "graphql": "^0.7.0"
+    "graphql": "^0.9.3"
   },
   "config": {
     "ghooks": {
